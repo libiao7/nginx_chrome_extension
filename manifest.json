@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "nginx_chrome_extension",
+    "version": "2025.7.23",
+    "permissions": [
+        "http://*:50080/*"
+    ],
+    "content_scripts": [
+        {
+            "css": [
+                "nginx.css"
+            ],
+            "matches": [
+                "http://*:50080/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "http://*:50080/*"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}

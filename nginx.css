@@ -1,0 +1,33 @@
+hr {
+    display: none;
+}
+
+pre>a {
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 40px 5px;
+    /* 横向 20px，纵向 5px */
+}
+
+tr:hover {
+    background-color: pink;
+}
+
+a {
+    user-select: text;
+    -webkit-user-drag: none;
+    text-decoration: none;
+    user-select: text;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #aaa;
+}
